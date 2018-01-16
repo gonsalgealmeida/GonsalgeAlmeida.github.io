@@ -1,0 +1,179 @@
+# If you have a `resume.json` file, copy it into `_data` and delete this file.
+# If you don't have a JSON Resume you can just edit this YAML file instead.
+# See also: <https://jsonresume.org/>.
+
+# The order and layout of this is edited in the resume.md file
+
+basics:
+  name: "Jordan Ball"
+  label: "Data Scientist"
+  picture: "/assets/img/singing.jpg"
+  email: "jball.data@gmail.com"
+  phone: "(985) 789-4698"
+  website: "https://jballdata.github.io"
+  summary: >
+    
+    <p style="text-align: justify;">Jordan has earned degrees from the University of Florida and Louisiana State
+    University. Before accepting a position in a data science training program, he 
+    performed analyses of plasma thrusters, nuclear reactors, and materials. Through 
+    his role as an accountant and his business leadership courses, he has gained industry 
+    perspectives which complement his academic training. In addition, he has worked as a 
+    public relations officer, a peer mentor, and a teacher which, along with his research and
+    leadership presentations have trained him to speak effectively to any audience.</p>
+  location:
+    address: "881 Athens Ave"
+    postalCode: "CA 94607"
+    city: "Oakland"
+    countryCode: "US"
+    region: "California"
+  profiles:
+#    - network: "Twitter"
+#      username: "RHendricksCEO"
+#      url: ""
+    - network: "LinkedIn"
+      username: "Jordan Ball"
+      url: ""
+work:
+  - company: "University of Florida"
+    position: "Graduate Researcher"
+    website: "https://www.nuceng.ufl.edu/"
+    startDate: "2016-06-20"
+    endDate: "2017-12-29"
+    summary: >
+      Jordan worked with Dr. Leigh Winfrey doing space nuclear propulsion
+      research on a plasma microthruster and performed computational analysis on reactor 
+      criticality with Dr. Andreas Enqvist
+      
+    highlights:
+      - "Rework codes to solve for propulsive properties of plasma flow within thruster"
+      - "Using supercomputer nodes, computationally analyze nuclear reactor core data"
+      
+  - company: "LSYOU Program for At-Risk Youths"
+    position: "Accounting Intern"
+    website: "http://lsyou.lsu.edu/index_actual.php"
+    startDate: "2012-08-20"
+    endDate: "2016-05-15"
+    summary: >
+      As Jordan was a student, his job title was 'Accounting Intern'; however, after the first year,
+      the full-time accountant left and he ended up taking over her role entirely. After the initial
+      initial finances meeting with the Bursar's Office, Jordan saw inefficiencies in the current 
+      accounting system and built a new one from scratch -- it replaced the office's spreadsheets as well
+      as those used by the Bursar's Office.
+      
+    highlights:
+      - "Handled approximately $1,000,000 annually in small daily charges spread across five grants"
+      - "Rebuilt accounting system and trained data entry personnel on its use"
+  - company: "Louisiana State University"
+    position: "Computational Researcher"
+    website: "http://www.lsu.edu/physics/"
+    startDate: "2014-05-20"
+    endDate: "2016-06-20"
+    summary: >
+      As these projects were computational, this time was largely spent working with the codes 
+      and computing systems. Jordan assisted in setting up new nodes in a cluster and did a 
+      detailed analysis of the computational logic used in the group's codes in addition to presenting
+      to the experimental group and occassionally to undergraduates new to the field.
+      
+    highlights:
+      - "Computationally analyze materials via iterative methods to determine electric and magnetic properties"
+      - "Compare theoretical data with the results from the experimental lab under Dr. John DiTusa"
+volunteer:
+  - organization: "314 Action"
+    position: "Florida State Coordinator"
+    website: "http://www.314action.org/home"
+    startDate: "2017-01-01"
+    endDate: ""
+    summary: "National program to get scientists and data analysts involved in politics"
+    highlights:
+      - "16,000 volunteers in Florida"
+  - organization: "LSU Physics Dept."
+    position: "Public Relations Officer, Peer Mentor"
+    website: "http://www.lsu.edu/physics/"
+    startDate: "2014-05-15"
+    endDate: "2016-05-15"
+    summary: "Organized physics events and mentored newer students"
+    highlights:
+      - "Frequently led teams on outreach events he organized"
+education:
+  - institution: "The Data Incubator"
+    area: "Data Science"
+    studyType: "Professional"
+    startDate: "2018-01-02"
+    endDate: "2018-02-23"
+#    gpa: "3.51"
+    courses:
+      - "Capstone: Quantitative Analysis of Demographic Trends"
+  - institution: "University of Florida"
+    area: "Nuclear Engineering"
+    studyType: "Master"
+    startDate: "2016-08-20"
+    endDate: "2017-08-13"
+    gpa: "3.51"
+    courses:
+      - "Engineering Leadership Certification"
+  - institution: "Louisiana State University"
+    area: "Physics"
+    studyType: "Bachelor"
+    startDate: "2012-08-20"
+    endDate: "2016-05-13"
+    gpa: "3.44"
+    courses:
+      - "Thesis, Upper-Division, Physics, and College Honors"
+  - institution: "Louisiana State University"
+    area: "Philosophy: Mathematical Logic"
+    studyType: "Bachelor"
+    startDate: "2012-08-20"
+    endDate: "2016-05-13"
+    gpa: "3.44"
+    
+#    courses:
+#      - "DB1101 - Basic SQL"
+#      - "CS2011 - Java Introduction"
+awards:
+  - title: "Engineering Leadership"
+    date: "2017-12-13"
+    awarder: "UF College of Engineering"
+    summary: "Excelled in business thinking for engineers training course set"
+  - title: "Future Leaders Research Award"
+    date: "2012-08-20"
+    awarder: "Louisiana State University"
+    summary: "University funds research opportunities for high achieving students"
+publications:
+  - name: "Robust Resistive Critical Field in B20 AuBe and other Noncentrosymmetric Superconductors"
+    publisher: "American Physical Society"
+    releaseDate: "2017-03-15"
+    website: "http://adsabs.harvard.edu/abs/2016APS..MARS25012R"
+    summary: "4th Author; Accredited for work doing the computational analysis of the materials"
+skills:
+  - name: "Quantitative Analysis"
+    level: "Master"
+    keywords:
+      - "Computational Logic"
+      - "Statistical Analysis"
+  - name: "Scripting"
+    level: "Master"
+    keywords:
+      - "Python"
+      - "Unix"
+      - "C++"
+  - name: "Finance"
+    level: "Proficient"
+    keywords:
+      - "Accounting"
+      - "Risk Analysis"
+      - "Technical Stock Analysis"
+#languages:
+#  - language: "English"
+#    fluency: "Native speaker"
+interests:
+  - name: "Hiking"
+  - name: "Krav Maga"
+  - name: "HAM Radio"
+    keywords:
+      - "Technician"
+      - "Call: KF5VKV"
+#references:
+#  - name: "Erlich Bachman"
+#    reference: >
+#      It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
+#      Company proved that he will be a valuable addition to any company.
