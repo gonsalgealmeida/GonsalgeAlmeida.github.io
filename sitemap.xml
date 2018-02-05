@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://domain.tld/tag/hyde/</loc>
-<lastmod>2018-02-05T11:31:27-08:00</lastmod>
+<lastmod>2018-02-05T11:34:39-08:00</lastmod>
 </url>
 <url>
 <loc>https://domain.tld/tag/hydejack/</loc>
-<lastmod>2018-02-05T11:31:27-08:00</lastmod>
+<lastmod>2018-02-05T11:34:39-08:00</lastmod>
 </url>
 <url>
 <loc>https://domain.tld/2018/01/15/Daily-Routine-of-TDI/</loc>
@@ -29,11 +29,11 @@
 <lastmod>2018-01-31T00:00:00-08:00</lastmod>
 </url>
 <url>
-<loc>https://domain.tld/projects/knight/</loc>
+<loc>https://domain.tld/projects/NLP/</loc>
 <lastmod>2018-02-02T00:00:00-08:00</lastmod>
 </url>
 <url>
-<loc>https://domain.tld/projects/nlp/</loc>
+<loc>https://domain.tld/projects/knight/</loc>
 <lastmod>2018-02-02T00:00:00-08:00</lastmod>
 </url>
 <url>
