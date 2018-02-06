@@ -58,7 +58,7 @@ Powered by Hydejack v7.5.0 <https://qwtel.com/hydejack/>
 <meta name="msapplication-config" content="/assets/ieconfig.xml">
 
 
-<meta name="theme-color" content="#2874A6">
+<meta name="theme-color" content="#877018">
 
 
 <meta name="generator" content="Hydejack v7.5.0">
@@ -145,7 +145,7 @@ Powered by Hydejack v7.5.0 <https://qwtel.com/hydejack/>
 
 <style id="_pageStyle">
 
-.content a:not(.btn){color:#2874A6;border-color:rgba(40,116,166,0.2)}.content a:not(.btn):hover{border-color:#2874A6}:focus{outline-color:#2874A6}.btn-primary{color:#fff;background-color:#2874A6;border-color:#2874A6}.btn-primary:focus,.btn-primary.focus{box-shadow:0 0 0 3px rgba(40,116,166,0.5)}.btn-primary:hover,.btn-primary.hover{color:#fff;background-color:#215e87;border-color:#215e87}.btn-primary:disabled,.btn-primary.disabled{color:#fff;background-color:#2874A6;border-color:#2874A6}.btn-primary:active,.btn-primary.active{color:#fff;background-color:#215e87;border-color:#215e87}::selection{color:#fff;background:#2874A6}::-moz-selection{color:#fff;background:#2874A6}
+.content a:not(.btn){color:#877018;border-color:rgba(135,112,24,0.2)}.content a:not(.btn):hover{border-color:#877018}:focus{outline-color:#877018}.btn-primary{color:#fff;background-color:#877018;border-color:#877018}.btn-primary:focus,.btn-primary.focus{box-shadow:0 0 0 3px rgba(135,112,24,0.5)}.btn-primary:hover,.btn-primary.hover{color:#fff;background-color:#675512;border-color:#675512}.btn-primary:disabled,.btn-primary.disabled{color:#fff;background-color:#877018;border-color:#877018}.btn-primary:active,.btn-primary.active{color:#fff;background-color:#675512;border-color:#675512}::selection{color:#fff;background:#877018}::-moz-selection{color:#fff;background:#877018}
 
 </style>
 
@@ -175,7 +175,7 @@ Powered by Hydejack v7.5.0 <https://qwtel.com/hydejack/>
     id="_main"
     class="content fade-in layout-project"
     role="main"
-    data-color="#2874A6"
+    data-color="#877018"
     data-theme-color=""
     
       data-image="none"
@@ -271,19 +271,19 @@ be computationally feasible, granting a greatly increased precision with little 
 	<span class="kt">double</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 	<span class="kt">double</span> <span class="n">No</span><span class="p">;</span>
 		
-	<span class="kt">double</span> <span class="n">ro_stone</span> <span class="o">=</span> <span class="mf">2.2</span><span class="o">+</span><span class="mf">0.01</span><span class="o">*</span><span class="n">z</span><span class="o">/</span><span class="mi">1000</span><span class="p">;</span>										<span class="c1">// in g/cm^3
-</span>	<span class="kt">double</span> <span class="n">ro_oil</span> <span class="o">=</span> <span class="mf">0.975</span><span class="p">;</span>													<span class="c1">// in g/cm^3
+	<span class="kt">double</span> <span class="n">ro_stone</span> <span class="o">=</span> <span class="mf">2.2</span><span class="o">+</span><span class="mf">0.01</span><span class="o">*</span><span class="n">z</span><span class="o">/</span><span class="mi">1000</span><span class="p">;</span>			<span class="c1">// in g/cm^3
+</span>	<span class="kt">double</span> <span class="n">ro_oil</span> <span class="o">=</span> <span class="mf">0.975</span><span class="p">;</span>						<span class="c1">// in g/cm^3
 </span>	<span class="kt">double</span> <span class="n">ro</span><span class="p">;</span>
 	
 	<span class="kt">double</span> <span class="n">Na</span> <span class="o">=</span> <span class="mf">6.022</span><span class="o">*</span><span class="n">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">23</span><span class="p">);</span>
 	<span class="kt">double</span> <span class="n">A_stone</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-	<span class="kt">double</span> <span class="n">A_oil</span> <span class="o">=</span> <span class="mf">28.231</span><span class="p">;</span>													<span class="c1">// nonphysical approximation
+	<span class="kt">double</span> <span class="n">A_oil</span> <span class="o">=</span> <span class="mf">28.231</span><span class="p">;</span>						<span class="c1">// nonphysical approximation
 </span>	<span class="kt">double</span> <span class="n">alpha_stone</span> <span class="o">=</span> <span class="mi">99</span><span class="o">/</span><span class="mi">100</span><span class="p">;</span>
 	<span class="kt">double</span> <span class="n">alpha_oil</span> <span class="o">=</span> <span class="mf">27.231</span><span class="o">/</span><span class="mf">29.231</span><span class="p">;</span>
 	<span class="kt">double</span> <span class="n">A</span><span class="p">;</span>
 	<span class="kt">double</span> <span class="n">alpha</span><span class="p">;</span>
 	
-	<span class="n">srand</span><span class="p">(</span><span class="mi">740982364</span><span class="p">);</span>														<span class="c1">//((double)rand()/(double)RAND_MAX) generates random number between 0 and 1
+	<span class="n">srand</span><span class="p">(</span><span class="mi">740982364</span><span class="p">);</span>							<span class="c1">//((double)rand()/(double)RAND_MAX) generates random number between 0 and 1
 </span>	
     <span class="kt">double</span> <span class="n">stone_slow_scat</span> <span class="o">=</span> <span class="mf">19.65361</span><span class="o">*</span><span class="n">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">24</span><span class="p">);</span>
     <span class="kt">double</span> <span class="n">stone_slow_abs</span> <span class="o">=</span> <span class="mf">0.168101</span><span class="o">*</span><span class="n">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">24</span><span class="p">);</span>
@@ -310,31 +310,31 @@ be computationally feasible, granting a greatly increased precision with little 
 	<span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="n">No</span><span class="p">;</span>
 	<span class="kt">int</span> <span class="n">reflected</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 	
-	<span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">No</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>												<span class="c1">//1 cycle for each neutron
+	<span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">No</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>			<span class="c1">//1 cycle for each neutron
 </span>		
 		<span class="n">z</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">ro_stone</span><span class="o">*</span><span class="p">(</span><span class="n">stone_slow_abs</span><span class="o">+</span><span class="n">stone_slow_scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A_stone</span><span class="p">);</span>		<span class="c1">//starting it with one MFP so the code doesn't end up with one less collision per neutron	
 </span>			
-		<span class="k">do</span><span class="p">{</span>																	<span class="c1">//run this until absorbed or past 40m
+		<span class="k">do</span><span class="p">{</span>			<span class="c1">//run this until absorbed or past 40m
 </span>			
-			<span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">){</span>													<span class="c1">//removes neutrons above the surface as prob. interaction is negligible in comparison
+			<span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">){</span>			<span class="c1">//removes neutrons above the surface as prob. interaction is negligible in comparison
 </span>			    <span class="n">reflected</span> <span class="o">=</span> <span class="n">reflected</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
 			    <span class="n">N</span> <span class="o">=</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
 		    	<span class="n">z</span><span class="o">=</span><span class="mi">50</span><span class="p">;</span>
 		    <span class="p">}</span>
 		
-		    <span class="k">else</span> <span class="p">{</span>															<span class="c1">//For all neutrons not reflected
+		    <span class="k">else</span> <span class="p">{</span>					<span class="c1">//For all neutrons not reflected
 </span>			
 			    <span class="n">ro_stone</span> <span class="o">=</span> <span class="mf">2.2</span><span class="o">+</span><span class="mf">0.01</span><span class="o">*</span><span class="n">z</span><span class="o">/</span><span class="mi">1000</span><span class="p">;</span>
 			
 			
 				
-				<span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">20</span><span class="p">){</span>												<span class="c1">//Splits the neutrons by medium
+				<span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">20</span><span class="p">){</span>		<span class="c1">//Splits the neutrons by medium
 </span>					
 					<span class="n">ro</span> <span class="o">=</span> <span class="n">ro_stone</span><span class="p">;</span>
 					<span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_stone</span><span class="p">;</span>
 					<span class="n">A</span> <span class="o">=</span> <span class="n">A_stone</span><span class="p">;</span>
 				
-					<span class="k">if</span> <span class="p">(</span><span class="n">E</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">){</span>											<span class="c1">//Splits by energy group
+					<span class="k">if</span> <span class="p">(</span><span class="n">E</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">){</span>	<span class="c1">//Splits by energy group
 </span>					
 						<span class="n">abs</span> <span class="o">=</span> <span class="n">stone_slow_abs</span><span class="p">;</span>
 						<span class="n">scat</span> <span class="o">=</span> <span class="n">stone_slow_scat</span><span class="p">;</span>				
@@ -349,7 +349,7 @@ be computationally feasible, granting a greatly increased precision with little 
 			
 				<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="mi">20</span> <span class="o">&lt;</span> <span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">40</span><span class="p">)</span> <span class="p">{</span>
 				
-					<span class="c1">//ro = 0.3*ro_oil + 0.7*ro_stone;						// Nearly baseless choice of weighting, potential source of error
+					<span class="c1">//ro = 0.3*ro_oil + 0.7*ro_stone;		// Nearly baseless choice of weighting, potential source of error
 </span>				
 					<span class="k">if</span> <span class="p">(</span><span class="n">E</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">){</span>
 					
@@ -405,7 +405,7 @@ be computationally feasible, granting a greatly increased precision with little 
 				<span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="n">scat</span><span class="o">/</span><span class="p">(</span><span class="n">abs</span> <span class="o">+</span> <span class="n">scat</span><span class="p">)){</span>
 				
 					<span class="n">r</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">rand</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">RAND_MAX</span><span class="p">);</span>
-					<span class="n">d</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="mf">3.141592653</span><span class="p">);</span>											<span class="c1">//Gives a randomized cos(theta) because z = path length * cos(theta)
+					<span class="n">d</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="mf">3.141592653</span><span class="p">);</span>					<span class="c1">//Gives a randomized cos(theta) because z = path length * cos(theta)
 </span>					<span class="n">r</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">rand</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">RAND_MAX</span><span class="p">);</span>
 					<span class="n">z</span> <span class="o">=</span> <span class="n">z</span> <span class="o">+</span> <span class="p">(</span><span class="o">-</span><span class="n">log</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="p">((</span><span class="n">ro</span><span class="o">*</span><span class="p">(</span><span class="n">abs</span><span class="o">+</span><span class="n">scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A</span><span class="p">)</span><span class="o">*</span><span class="n">ro</span><span class="o">*</span><span class="p">(</span><span class="n">abs</span><span class="o">+</span><span class="n">scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A</span><span class="p">))</span><span class="o">*</span><span class="n">d</span><span class="p">;</span>
 					<span class="n">E</span> <span class="o">=</span> <span class="n">E</span><span class="o">*</span><span class="p">((</span><span class="mi">1</span><span class="o">+</span><span class="n">alpha</span><span class="p">)</span><span class="o">-</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span><span class="o">*</span><span class="n">d</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
@@ -697,7 +697,7 @@ be computationally feasible, granting a greatly increased precision with little 
   <hy-drawer>
   <header id="_sidebar" class="sidebar" role="banner">
     
-    <div class="sidebar-bg " style="background-color:#2874A6;"></div>
+    <div class="sidebar-bg " style="background-color:#877018;"></div>
 
     <div class="sidebar-sticky">
       <div class="sidebar-about">
