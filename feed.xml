@@ -1,4 +1,165 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://domain.tld/feed.xml" rel="self" type="application/atom+xml" /><link href="https://domain.tld/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-02-05T16:46:56-08:00</updated><id>https://domain.tld/</id><title type="html">Jordan Ball</title><subtitle></subtitle><author><name>Jordan Ball</name><email>jball.data@gmail.com</email></author><entry><title type="html">Daily Routine of The Data Incubator</title><link href="https://domain.tld/2018/01/15/Daily-Routine-of-TDI/" rel="alternate" type="text/html" title="Daily Routine of The Data Incubator" /><published>2018-01-15T00:00:00-08:00</published><updated>2018-01-15T00:00:00-08:00</updated><id>https://domain.tld/2018/01/15/Daily-Routine-of-TDI</id><content type="html" xml:base="https://domain.tld/2018/01/15/Daily-Routine-of-TDI/">&lt;p&gt;When I began applying for The Data Incubator, I wasn’t sure what I was getting into. All I knew was
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://domain.tld/feed.xml" rel="self" type="application/atom+xml" /><link href="https://domain.tld/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-02-07T15:17:42-08:00</updated><id>https://domain.tld/</id><title type="html">Jordan Ball</title><subtitle></subtitle><author><name>Jordan Ball</name><email>jball.data@gmail.com</email></author><entry><title type="html">Machine Learning Approach</title><link href="https://domain.tld/2018/02/07/Machine-Learning-Approach/" rel="alternate" type="text/html" title="Machine Learning Approach" /><published>2018-02-07T00:00:00-08:00</published><updated>2018-02-07T00:00:00-08:00</updated><id>https://domain.tld/2018/02/07/Machine-Learning-Approach</id><content type="html" xml:base="https://domain.tld/2018/02/07/Machine-Learning-Approach/">&lt;h1 id=&quot;procedure&quot;&gt;Procedure:&lt;/h1&gt;
+
+&lt;h2 id=&quot;steps&quot;&gt;Steps:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Exploratory Visualizations&lt;/li&gt;
+  &lt;li&gt;Feature Analysis&lt;/li&gt;
+  &lt;li&gt;Model Candidate Selection&lt;/li&gt;
+  &lt;li&gt;Cross-Validate Candidates&lt;/li&gt;
+  &lt;li&gt;Optimization&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;1-exploratory-visualizations&quot;&gt;1. Exploratory Visualizations&lt;/h3&gt;
+
+&lt;p&gt;Whenever you are given a dataset to work on that you are unfamiliar with, it is always a good idea to generate some exploratory visualizations to get a sense
+of the basic trends in the data. Some datasets will have different trends while displaying similar aggregate statistics. Take Anscombe’s Quartet for example–
+Anscombe’s Quartet is a group of four datasets that have identical aggregate statistics; however, they have very different relationships and trends.&lt;/p&gt;
+
+&lt;h4 id=&quot;anscombes-quartet-statistics&quot;&gt;Anscombe’s Quartet Statistics*&lt;/h4&gt;
+&lt;p&gt;| Property                         | Value         |
+|:———————————|:————-:|
+| x Mean                           | 9             |
+| x Variance                       | 11            |
+| y Mean                           | 7.50          |
+| y Variance                       | 4.125         |
+| x, y Correlation                 | 0.816         |
+| Linear Regression Fit            | y=3.00+0.500x |
+| LR Coefficient of Determination  | 0.67          |
+&lt;em&gt;*From Wikipedia&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;With all four datasets having these statistics, it is easy to see how someone might consider them to be identical or at least very similar. However, if we plot
+the data instead of analyzing it mathematically, we see something very different.&lt;/p&gt;
+
+&lt;h4 id=&quot;anscombes-quartet-plots&quot;&gt;Anscombe’s Quartet Plots*&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/img/posts/anscombe.png&quot; alt=&quot;&quot; class=&quot;lead&quot; /&gt;
+&lt;em&gt;*From Wikipedia&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can now see, each dataset in the quartet displays a very different trend. This would take a significant amount of time and effort to determine purely mathematically,
+whereas it is simple to generate a few plots which clearly display the differences. In addition to the speed of using visualizations, they can help you get a more intuitive
+grasp on what is going on with the data which can help you later down the road.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-feature-analysis&quot;&gt;2. Feature Analysis&lt;/h3&gt;
+
+&lt;p&gt;Unless a project is specifically to determine some result given an exact list of features, it is incredibly important to do your due diligence on the features you
+are using in your model. Using the wrong features can yield incorrect and misleading results. It is important that you understand which features are explicitly correlated
+with the result, what assumptions may have been used during feature selection, and whether any additional features need to be included.&lt;/p&gt;
+
+&lt;p&gt;It is easy to fall into the trap of believing that ‘data is data’ and that data scientists can necessarily handle any dataset because of their understanding of data manipulation
+and machine learning. This is often not the case, and it is important for data scientists to have a multi-disciplinary understanding of their data to properly determine features.&lt;/p&gt;
+
+&lt;h4 id=&quot;example-1-natural-language-processing&quot;&gt;Example 1: Natural Language Processing&lt;/h4&gt;
+
+&lt;p&gt;Let’s say we want to analyze a number of text messages. If we were looking to determine topics, we would want to include words such as “lol” and “haha” in our list of stop words.
+However, if we wanted to perform sentiment analysis, these words become very important. In texts, “lol” and “haha” have no semantic meaning whatsoever and are simply used as 
+sentiment flags to express that the text is meant to be understood in a positive context. By getting a basic linguistic understanding of the type of data and results we want,
+we can make sure to feed the model the relevant features.&lt;/p&gt;
+
+&lt;h4 id=&quot;example-2-application-statistics&quot;&gt;Example 2: Application Statistics*&lt;/h4&gt;
+
+&lt;p&gt;Imagine we find that a university accepts 45% of male applicants and only 30% of female applicants. It would be easy to feed this into a model being used to predict the likelihood
+of a particular student getting accepted; however, we would likely then find that our model is not very accurate. By considering the data and what it is we are trying to find,
+it becomes clear that our model is operating on the incorrect assumption that acceptance rates are standard throughout the university. As individual departments are in charge
+of determining which students are admitted, it is necessary to split this feature up by the university’s departments. This would provide a more accurate model and might show
+than the acceptance rates are not affected by sex and that the aggregate stats are caused by a correlation of women applying to more selective programs.&lt;/p&gt;
+
+&lt;p&gt;In most cases, good features are more important than good model parameters.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-model-candidate-selection&quot;&gt;3. Model Candidate Selection&lt;/h3&gt;
+
+&lt;p&gt;Now that we have a good understanding of the data, we can go ahead and determine which models are likely to be effective. Until you can develop a solid understanding of the
+pros and cons of the different models, the image shown below from scikit-learn is a good starting point for model selection.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/img/posts/ml_map.png&quot; alt=&quot;&quot; class=&quot;lead&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;4-cross-validate-candidates&quot;&gt;4. Cross-Validate Candidates&lt;/h3&gt;
+
+&lt;p&gt;The importance of this step depends on your usage. If you simply need to get a quick answer that doesn’t neccessarily need to be very accurate, this step can be skipped as long
+as you have some experience in model selection. However, if the accuracy of the results needs to be optimized, then it is useful to test out a few different viable models. This 
+can be done using identical train-test splits for the different models and comparing the results of these. Then it is a simple matter to choose the model that is performing better
+than the others. If time is truly not a factor (which is rarely the case), then accuracy could be improved by optimizing the model parameters before testing the candidates’ performance.&lt;/p&gt;
+
+&lt;h3 id=&quot;5-optimization&quot;&gt;5. Optimization&lt;/h3&gt;
+
+&lt;p&gt;Once the model has been selected, we will want to optimize its parameters. This is done by comparing the performance of different parameter settings. Scikit-learn has a useful
+‘GridSearchCV’ function which will allow you to feed in ranges of parameters for comparison. Once we have optimized the model, just feed in your data and you’re done.&lt;/p&gt;
+
+&lt;h1 id=&quot;common-machine-learning-categories&quot;&gt;Common Machine Learning Categories&lt;/h1&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Supervised Learning
+    &lt;ul&gt;
+      &lt;li&gt;Regression
+        &lt;ul&gt;
+          &lt;li&gt;Linear Regression&lt;/li&gt;
+          &lt;li&gt;Random Forest&lt;/li&gt;
+          &lt;li&gt;Ridge Regression&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Classification
+        &lt;ul&gt;
+          &lt;li&gt;SVM&lt;/li&gt;
+          &lt;li&gt;Mean Shift&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Unsupervised Learning
+    &lt;ul&gt;
+      &lt;li&gt;Clustering
+        &lt;ul&gt;
+          &lt;li&gt;Kmeans&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Reinforcement Learning
+    &lt;ul&gt;
+      &lt;li&gt;Markov Decision Process&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;supervised-learning&quot;&gt;Supervised Learning&lt;/h2&gt;
+
+&lt;p&gt;In supervised learning, the model is fed labelled training data and produces a function to determine the labels from new input.&lt;/p&gt;
+
+&lt;h3 id=&quot;regression&quot;&gt;Regression&lt;/h3&gt;
+
+&lt;p&gt;Regression analysis is a type of supervised learning and is used to estimate the relationship between a dependent variable and one or more independent variables. It can be used either to give an average expected value of the dependent value given fixed independent
+variables or to yield a value that will be above/below the true value some specified percentage of the time.&lt;/p&gt;
+
+&lt;h4 id=&quot;linear-regression&quot;&gt;Linear Regression&lt;/h4&gt;
+
+&lt;h5 id=&quot;how-it-works&quot;&gt;How it works&lt;/h5&gt;
+
+&lt;p&gt;Linear Regression models are usually fitted using the least squares approach and generates a linear function that minimizes the sum of the squared residuals from the training data.&lt;/p&gt;
+
+&lt;h5 id=&quot;parameters&quot;&gt;Parameters&lt;/h5&gt;
+
+&lt;p&gt;*fit_intercept: This is used to determine whether or not an intercept is expected, if the data is already normalized, this can be set to false.
+*normalize: If the data is not normalized, setting normalize as true will normalize the results.&lt;/p&gt;
+
+&lt;h5 id=&quot;pros-and-cons&quot;&gt;Pros and Cons&lt;/h5&gt;
+
+&lt;h3 id=&quot;classification&quot;&gt;Classification&lt;/h3&gt;
+
+&lt;h4 id=&quot;support-vector-machine-svm&quot;&gt;Support Vector Machine (SVM)&lt;/h4&gt;
+
+&lt;h2 id=&quot;unsupervised-learning&quot;&gt;Unsupervised Learning&lt;/h2&gt;
+
+&lt;p&gt;In unsupervised learning, the model is fed unlabelled data; this is useful for detecting patterns or mining for rules present in the data.&lt;/p&gt;
+
+&lt;h2 id=&quot;reinforcement-learning&quot;&gt;Reinforcement Learning&lt;/h2&gt;
+
+&lt;p&gt;In reinforcement learning, the model uses observations gathered from interacting with the environment and is trained to take actions which maximize reward or minimize risk.&lt;/p&gt;
+
+&lt;p&gt;Regression analysis is a type of supervised learning and is used to estimate the relationship between a dependent variable and one or more independent variables. It can be used either to give an average expected value of the dependent value given fixed independent
+variables or to yield a value that will be above/below the true value some specified percentage of the time.&lt;/p&gt;
+
+&lt;h1 id=&quot;common-models&quot;&gt;Common Models&lt;/h1&gt;</content><author><name>Jordan Ball</name><email>jball.data@gmail.com</email></author><category term="hydejack" /><summary type="html">Procedure:</summary></entry><entry><title type="html">Daily Routine of The Data Incubator</title><link href="https://domain.tld/2018/01/15/Daily-Routine-of-TDI/" rel="alternate" type="text/html" title="Daily Routine of The Data Incubator" /><published>2018-01-15T00:00:00-08:00</published><updated>2018-01-15T00:00:00-08:00</updated><id>https://domain.tld/2018/01/15/Daily-Routine-of-TDI</id><content type="html" xml:base="https://domain.tld/2018/01/15/Daily-Routine-of-TDI/">&lt;p&gt;When I began applying for The Data Incubator, I wasn’t sure what I was getting into. All I knew was
 that I wanted to be as skilled a data scientist as possible and TDI was a well respected training program.
 Overall, the program has been even better than I had anticipated. The program is relies heavily on 
 collaboration with the other members of the cohort. There are only a few scheduled events each day;
