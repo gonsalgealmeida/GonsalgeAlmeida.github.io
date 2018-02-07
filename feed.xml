@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://domain.tld/feed.xml" rel="self" type="application/atom+xml" /><link href="https://domain.tld/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-02-07T15:17:42-08:00</updated><id>https://domain.tld/</id><title type="html">Jordan Ball</title><subtitle></subtitle><author><name>Jordan Ball</name><email>jball.data@gmail.com</email></author><entry><title type="html">Machine Learning Approach</title><link href="https://domain.tld/2018/02/07/Machine-Learning-Approach/" rel="alternate" type="text/html" title="Machine Learning Approach" /><published>2018-02-07T00:00:00-08:00</published><updated>2018-02-07T00:00:00-08:00</updated><id>https://domain.tld/2018/02/07/Machine-Learning-Approach</id><content type="html" xml:base="https://domain.tld/2018/02/07/Machine-Learning-Approach/">&lt;h1 id=&quot;procedure&quot;&gt;Procedure:&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://domain.tld/feed.xml" rel="self" type="application/atom+xml" /><link href="https://domain.tld/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-02-07T15:25:18-08:00</updated><id>https://domain.tld/</id><title type="html">Jordan Ball</title><subtitle></subtitle><author><name>Jordan Ball</name><email>jball.data@gmail.com</email></author><entry><title type="html">Machine Learning Approach</title><link href="https://domain.tld/2018/02/07/Machine-Learning-Approach/" rel="alternate" type="text/html" title="Machine Learning Approach" /><published>2018-02-07T00:00:00-08:00</published><updated>2018-02-07T00:00:00-08:00</updated><id>https://domain.tld/2018/02/07/Machine-Learning-Approach</id><content type="html" xml:base="https://domain.tld/2018/02/07/Machine-Learning-Approach/">&lt;h1 id=&quot;procedure&quot;&gt;Procedure:&lt;/h1&gt;
 
 &lt;h2 id=&quot;steps&quot;&gt;Steps:&lt;/h2&gt;
 
@@ -17,7 +17,7 @@ of the basic trends in the data. Some datasets will have different trends while 
 Anscombe’s Quartet is a group of four datasets that have identical aggregate statistics; however, they have very different relationships and trends.&lt;/p&gt;
 
 &lt;h4 id=&quot;anscombes-quartet-statistics&quot;&gt;Anscombe’s Quartet Statistics*&lt;/h4&gt;
-&lt;p&gt;| Property                         | Value         |
+&lt;p class=&quot;scroll-table&quot;&gt;| Property                         | Value         |
 |:———————————|:————-:|
 | x Mean                           | 9             |
 | x Variance                       | 11            |
@@ -25,14 +25,14 @@ Anscombe’s Quartet is a group of four datasets that have identical aggregate s
 | y Variance                       | 4.125         |
 | x, y Correlation                 | 0.816         |
 | Linear Regression Fit            | y=3.00+0.500x |
-| LR Coefficient of Determination  | 0.67          |
-&lt;em&gt;*From Wikipedia&lt;/em&gt;&lt;/p&gt;
+| LR Coefficient of Determination  | 0.67          |&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;*From Wikipedia&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;With all four datasets having these statistics, it is easy to see how someone might consider them to be identical or at least very similar. However, if we plot
 the data instead of analyzing it mathematically, we see something very different.&lt;/p&gt;
 
 &lt;h4 id=&quot;anscombes-quartet-plots&quot;&gt;Anscombe’s Quartet Plots*&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;../assets/img/posts/anscombe.png&quot; alt=&quot;&quot; class=&quot;lead&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/anscombe.PNG&quot; alt=&quot;Typeface&quot; class=&quot;lead&quot; /&gt;
 &lt;em&gt;*From Wikipedia&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;As you can now see, each dataset in the quartet displays a very different trend. This would take a significant amount of time and effort to determine purely mathematically,
