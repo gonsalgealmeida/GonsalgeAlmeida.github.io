@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://domain.tld/feed.xml" rel="self" type="application/atom+xml" /><link href="https://domain.tld/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-02-07T15:29:51-08:00</updated><id>https://domain.tld/</id><title type="html">Jordan Ball</title><subtitle></subtitle><author><name>Jordan Ball</name><email>jball.data@gmail.com</email></author><entry><title type="html">Machine Learning Approach</title><link href="https://domain.tld/2018/02/07/Machine-Learning-Approach/" rel="alternate" type="text/html" title="Machine Learning Approach" /><published>2018-02-07T00:00:00-08:00</published><updated>2018-02-07T00:00:00-08:00</updated><id>https://domain.tld/2018/02/07/Machine-Learning-Approach</id><content type="html" xml:base="https://domain.tld/2018/02/07/Machine-Learning-Approach/">&lt;h1 id=&quot;procedure&quot;&gt;Procedure:&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://domain.tld/feed.xml" rel="self" type="application/atom+xml" /><link href="https://domain.tld/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-02-07T15:41:38-08:00</updated><id>https://domain.tld/</id><title type="html">Jordan Ball</title><subtitle></subtitle><author><name>Jordan Ball</name><email>jball.data@gmail.com</email></author><entry><title type="html">Machine Learning Approach</title><link href="https://domain.tld/2018/02/07/Machine-Learning-Approach/" rel="alternate" type="text/html" title="Machine Learning Approach" /><published>2018-02-07T00:00:00-08:00</published><updated>2018-02-07T00:00:00-08:00</updated><id>https://domain.tld/2018/02/07/Machine-Learning-Approach</id><content type="html" xml:base="https://domain.tld/2018/02/07/Machine-Learning-Approach/">&lt;p&gt;This post examines a methodical approach for applying machine learning techniques which will help new users avoid common pitfalls. In addition,
+common categories, models, and terms are explained throughout the post.&lt;/p&gt;
+
+&lt;h1 id=&quot;procedure&quot;&gt;Procedure:&lt;/h1&gt;
 
 &lt;h2 id=&quot;steps&quot;&gt;Steps:&lt;/h2&gt;
 
@@ -85,7 +88,7 @@ However, if we wanted to perform sentiment analysis, these words become very imp
 sentiment flags to express that the text is meant to be understood in a positive context. By getting a basic linguistic understanding of the type of data and results we want,
 we can make sure to feed the model the relevant features.&lt;/p&gt;
 
-&lt;h4 id=&quot;example-2-application-statistics&quot;&gt;Example 2: Application Statistics*&lt;/h4&gt;
+&lt;h4 id=&quot;example-2-application-statistics&quot;&gt;Example 2: Application Statistics&lt;/h4&gt;
 
 &lt;p&gt;Imagine we find that a university accepts 45% of male applicants and only 30% of female applicants. It would be easy to feed this into a model being used to predict the likelihood
 of a particular student getting accepted; however, we would likely then find that our model is not very accurate. By considering the data and what it is we are trying to find,
@@ -100,7 +103,7 @@ than the acceptance rates are not affected by sex and that the aggregate stats a
 &lt;p&gt;Now that we have a good understanding of the data, we can go ahead and determine which models are likely to be effective. Until you can develop a solid understanding of the
 pros and cons of the different models, the image shown below from scikit-learn is a good starting point for model selection.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/img/posts/ml_map.png&quot; alt=&quot;&quot; class=&quot;lead&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/img/posts/posts/ml_map.png&quot; alt=&quot;Typeface&quot; class=&quot;lead&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;4-cross-validate-candidates&quot;&gt;4. Cross-Validate Candidates&lt;/h3&gt;
 
@@ -189,7 +192,7 @@ variables or to yield a value that will be above/below the true value some speci
 &lt;p&gt;Regression analysis is a type of supervised learning and is used to estimate the relationship between a dependent variable and one or more independent variables. It can be used either to give an average expected value of the dependent value given fixed independent
 variables or to yield a value that will be above/below the true value some specified percentage of the time.&lt;/p&gt;
 
-&lt;h1 id=&quot;common-models&quot;&gt;Common Models&lt;/h1&gt;</content><author><name>Jordan Ball</name><email>jball.data@gmail.com</email></author><category term="hydejack" /><summary type="html">Procedure:</summary></entry><entry><title type="html">Daily Routine of The Data Incubator</title><link href="https://domain.tld/2018/01/15/Daily-Routine-of-TDI/" rel="alternate" type="text/html" title="Daily Routine of The Data Incubator" /><published>2018-01-15T00:00:00-08:00</published><updated>2018-01-15T00:00:00-08:00</updated><id>https://domain.tld/2018/01/15/Daily-Routine-of-TDI</id><content type="html" xml:base="https://domain.tld/2018/01/15/Daily-Routine-of-TDI/">&lt;p&gt;When I began applying for The Data Incubator, I wasn’t sure what I was getting into. All I knew was
+&lt;h1 id=&quot;common-models&quot;&gt;Common Models&lt;/h1&gt;</content><author><name>Jordan Ball</name><email>jball.data@gmail.com</email></author><category term="ml" /><summary type="html">This post examines a methodical approach for applying machine learning techniques which will help new users avoid common pitfalls. In addition, common categories, models, and terms are explained throughout the post.</summary></entry><entry><title type="html">Daily Routine of The Data Incubator</title><link href="https://domain.tld/2018/01/15/Daily-Routine-of-TDI/" rel="alternate" type="text/html" title="Daily Routine of The Data Incubator" /><published>2018-01-15T00:00:00-08:00</published><updated>2018-01-15T00:00:00-08:00</updated><id>https://domain.tld/2018/01/15/Daily-Routine-of-TDI</id><content type="html" xml:base="https://domain.tld/2018/01/15/Daily-Routine-of-TDI/">&lt;p&gt;When I began applying for The Data Incubator, I wasn’t sure what I was getting into. All I knew was
 that I wanted to be as skilled a data scientist as possible and TDI was a well respected training program.
 Overall, the program has been even better than I had anticipated. The program is relies heavily on 
 collaboration with the other members of the cohort. There are only a few scheduled events each day;
