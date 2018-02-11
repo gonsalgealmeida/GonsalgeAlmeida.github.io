@@ -266,24 +266,24 @@ be computationally feasible, granting a greatly increased precision with little 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="kt">double</span> <span class="n">Eo</span> <span class="o">=</span> <span class="mi">2500000</span><span class="p">;</span>
-	<span class="kt">double</span> <span class="n">E</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">E</span><span class="p">;</span>
     <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-	<span class="kt">double</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-	<span class="kt">double</span> <span class="n">No</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">No</span><span class="p">;</span>
 		
-	<span class="kt">double</span> <span class="n">ro_stone</span> <span class="o">=</span> <span class="mf">2.2</span><span class="o">+</span><span class="mf">0.01</span><span class="o">*</span><span class="n">z</span><span class="o">/</span><span class="mi">1000</span><span class="p">;</span>			<span class="c1">// in g/cm^3
-</span>	<span class="kt">double</span> <span class="n">ro_oil</span> <span class="o">=</span> <span class="mf">0.975</span><span class="p">;</span>						<span class="c1">// in g/cm^3
-</span>	<span class="kt">double</span> <span class="n">ro</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">ro_stone</span> <span class="o">=</span> <span class="mf">2.2</span><span class="o">+</span><span class="mf">0.01</span><span class="o">*</span><span class="n">z</span><span class="o">/</span><span class="mi">1000</span><span class="p">;</span>          <span class="c1">// in g/cm^3
+</span>    <span class="kt">double</span> <span class="n">ro_oil</span> <span class="o">=</span> <span class="mf">0.975</span><span class="p">;</span>                      <span class="c1">// in g/cm^3
+</span>    <span class="kt">double</span> <span class="n">ro</span><span class="p">;</span>
 	
-	<span class="kt">double</span> <span class="n">Na</span> <span class="o">=</span> <span class="mf">6.022</span><span class="o">*</span><span class="n">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">23</span><span class="p">);</span>
-	<span class="kt">double</span> <span class="n">A_stone</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-	<span class="kt">double</span> <span class="n">A_oil</span> <span class="o">=</span> <span class="mf">28.231</span><span class="p">;</span>						<span class="c1">// nonphysical approximation
-</span>	<span class="kt">double</span> <span class="n">alpha_stone</span> <span class="o">=</span> <span class="mi">99</span><span class="o">/</span><span class="mi">100</span><span class="p">;</span>
-	<span class="kt">double</span> <span class="n">alpha_oil</span> <span class="o">=</span> <span class="mf">27.231</span><span class="o">/</span><span class="mf">29.231</span><span class="p">;</span>
-	<span class="kt">double</span> <span class="n">A</span><span class="p">;</span>
-	<span class="kt">double</span> <span class="n">alpha</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">Na</span> <span class="o">=</span> <span class="mf">6.022</span><span class="o">*</span><span class="n">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">23</span><span class="p">);</span>
+    <span class="kt">double</span> <span class="n">A_stone</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">A_oil</span> <span class="o">=</span> <span class="mf">28.231</span><span class="p">;</span>                      <span class="c1">// nonphysical approximation
+</span>    <span class="kt">double</span> <span class="n">alpha_stone</span> <span class="o">=</span> <span class="mi">99</span><span class="o">/</span><span class="mi">100</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">alpha_oil</span> <span class="o">=</span> <span class="mf">27.231</span><span class="o">/</span><span class="mf">29.231</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">A</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">alpha</span><span class="p">;</span>
 	
-	<span class="n">srand</span><span class="p">(</span><span class="mi">740982364</span><span class="p">);</span>							<span class="c1">//((double)rand()/(double)RAND_MAX) generates random number between 0 and 1
+    <span class="n">srand</span><span class="p">(</span><span class="mi">740982364</span><span class="p">);</span>                           <span class="c1">//((double)rand()/(double)RAND_MAX) generates random number between 0 and 1
 </span>	
     <span class="kt">double</span> <span class="n">stone_slow_scat</span> <span class="o">=</span> <span class="mf">19.65361</span><span class="o">*</span><span class="n">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">24</span><span class="p">);</span>
     <span class="kt">double</span> <span class="n">stone_slow_abs</span> <span class="o">=</span> <span class="mf">0.168101</span><span class="o">*</span><span class="n">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">24</span><span class="p">);</span>
@@ -293,135 +293,133 @@ be computationally feasible, granting a greatly increased precision with little 
     <span class="kt">double</span> <span class="n">oil_slow_abs</span> <span class="o">=</span> <span class="mf">0.010126</span><span class="o">*</span><span class="n">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">24</span><span class="p">);</span>
     <span class="kt">double</span> <span class="n">oil_fast_scat</span> <span class="o">=</span> <span class="mf">36.49341</span><span class="o">*</span><span class="n">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">24</span><span class="p">);</span>
     <span class="kt">double</span> <span class="n">oil_fast_abs</span> <span class="o">=</span> <span class="mf">22.61355</span><span class="o">*</span><span class="n">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">24</span><span class="p">);</span>
-	<span class="kt">double</span> <span class="n">abs</span><span class="p">;</span>
-	<span class="kt">double</span> <span class="n">scat</span><span class="p">;</span>
-	<span class="kt">double</span> <span class="n">sum_macro</span><span class="p">;</span>	
+    <span class="kt">double</span> <span class="n">abs</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">scat</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">sum_macro</span><span class="p">;</span>	
 	
     <span class="kt">double</span> <span class="n">r</span><span class="p">;</span>
-	<span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-	<span class="kt">double</span> <span class="n">interact</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-	<span class="kt">double</span> <span class="n">absorb</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">interact</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">absorb</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 	
-	<span class="n">E</span> <span class="o">=</span> <span class="n">Eo</span><span class="p">;</span>
+    <span class="n">E</span> <span class="o">=</span> <span class="n">Eo</span><span class="p">;</span>
 
-	<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"Input initial neutron number:"</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-	<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">No</span><span class="p">;</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"Input initial neutron number:"</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">No</span><span class="p">;</span>
 	
-	<span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="n">No</span><span class="p">;</span>
-	<span class="kt">int</span> <span class="n">reflected</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="n">No</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">reflected</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 	
-	<span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">No</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>			<span class="c1">//1 cycle for each neutron
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">No</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>       <span class="c1">//1 cycle for each neutron
 </span>		
-		<span class="n">z</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">ro_stone</span><span class="o">*</span><span class="p">(</span><span class="n">stone_slow_abs</span><span class="o">+</span><span class="n">stone_slow_scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A_stone</span><span class="p">);</span>		<span class="c1">//starting it with one MFP so the code doesn't end up with one less collision per neutron	
+        <span class="n">z</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">ro_stone</span><span class="o">*</span><span class="p">(</span><span class="n">stone_slow_abs</span><span class="o">+</span><span class="n">stone_slow_scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A_stone</span><span class="p">);</span>       <span class="c1">//starting it with one MFP so the code doesn't end up with one less collision per neutron	
 </span>			
-		<span class="k">do</span><span class="p">{</span>			<span class="c1">//run this until absorbed or past 40m
+        <span class="k">do</span><span class="p">{</span>			<span class="c1">//run this until absorbed or past 40m
 </span>			
-			<span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">){</span>			<span class="c1">//removes neutrons above the surface as prob. interaction is negligible in comparison
-</span>			    <span class="n">reflected</span> <span class="o">=</span> <span class="n">reflected</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-			    <span class="n">N</span> <span class="o">=</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-		    	<span class="n">z</span><span class="o">=</span><span class="mi">50</span><span class="p">;</span>
-		    <span class="p">}</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">){</span>        <span class="c1">//removes neutrons above the surface as prob. interaction is negligible in comparison
+</span>                <span class="n">reflected</span> <span class="o">=</span> <span class="n">reflected</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="n">N</span> <span class="o">=</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+                <span class="n">z</span><span class="o">=</span><span class="mi">50</span><span class="p">;</span>
+            <span class="p">}</span>
 		
-		    <span class="k">else</span> <span class="p">{</span>					<span class="c1">//For all neutrons not reflected
+            <span class="k">else</span> <span class="p">{</span>      <span class="c1">//For all neutrons not reflected
 </span>			
-			    <span class="n">ro_stone</span> <span class="o">=</span> <span class="mf">2.2</span><span class="o">+</span><span class="mf">0.01</span><span class="o">*</span><span class="n">z</span><span class="o">/</span><span class="mi">1000</span><span class="p">;</span>
+                <span class="n">ro_stone</span> <span class="o">=</span> <span class="mf">2.2</span><span class="o">+</span><span class="mf">0.01</span><span class="o">*</span><span class="n">z</span><span class="o">/</span><span class="mi">1000</span><span class="p">;</span>
 			
 			
 				
-				<span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">20</span><span class="p">){</span>		<span class="c1">//Splits the neutrons by medium
+                <span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">20</span><span class="p">){</span>       <span class="c1">//Splits the neutrons by medium
 </span>					
-					<span class="n">ro</span> <span class="o">=</span> <span class="n">ro_stone</span><span class="p">;</span>
-					<span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_stone</span><span class="p">;</span>
-					<span class="n">A</span> <span class="o">=</span> <span class="n">A_stone</span><span class="p">;</span>
+                    <span class="n">ro</span> <span class="o">=</span> <span class="n">ro_stone</span><span class="p">;</span>
+                    <span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_stone</span><span class="p">;</span>
+                    <span class="n">A</span> <span class="o">=</span> <span class="n">A_stone</span><span class="p">;</span>
 				
-					<span class="k">if</span> <span class="p">(</span><span class="n">E</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">){</span>	<span class="c1">//Splits by energy group
+                    <span class="k">if</span> <span class="p">(</span><span class="n">E</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">){</span>    <span class="c1">//Splits by energy group
 </span>					
-						<span class="n">abs</span> <span class="o">=</span> <span class="n">stone_slow_abs</span><span class="p">;</span>
-						<span class="n">scat</span> <span class="o">=</span> <span class="n">stone_slow_scat</span><span class="p">;</span>				
-					<span class="p">}</span>
+                        <span class="n">abs</span> <span class="o">=</span> <span class="n">stone_slow_abs</span><span class="p">;</span>
+                        <span class="n">scat</span> <span class="o">=</span> <span class="n">stone_slow_scat</span><span class="p">;</span>				
+                    <span class="p">}</span>
 					
-					<span class="k">else</span> <span class="p">{</span>
+                    <span class="k">else</span> <span class="p">{</span>
 					
-						<span class="n">abs</span> <span class="o">=</span> <span class="n">stone_fast_abs</span><span class="p">;</span>
-						<span class="n">scat</span> <span class="o">=</span> <span class="n">stone_fast_scat</span><span class="p">;</span>
-					<span class="p">}</span>
-				<span class="p">}</span>
+                        <span class="n">abs</span> <span class="o">=</span> <span class="n">stone_fast_abs</span><span class="p">;</span>
+                        <span class="n">scat</span> <span class="o">=</span> <span class="n">stone_fast_scat</span><span class="p">;</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
 			
-				<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="mi">20</span> <span class="o">&lt;</span> <span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">40</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="mi">20</span> <span class="o">&lt;</span> <span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">40</span><span class="p">)</span> <span class="p">{</span>
 				
-					<span class="c1">//ro = 0.3*ro_oil + 0.7*ro_stone;		// Best guess for weighting factors, potential source of error
-</span>				
-					<span class="k">if</span> <span class="p">(</span><span class="n">E</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">){</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">E</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">){</span>
 					
-						<span class="n">r</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">rand</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">RAND_MAX</span><span class="p">);</span>
-						<span class="n">sum_macro</span> <span class="o">=</span> <span class="mf">0.3</span><span class="o">*</span><span class="n">ro_oil</span><span class="o">*</span><span class="p">(</span><span class="n">oil_slow_abs</span><span class="o">+</span><span class="n">oil_slow_scat</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Na</span><span class="o">/</span><span class="n">A_oil</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.7</span><span class="o">*</span><span class="n">ro_stone</span><span class="o">*</span><span class="p">(</span><span class="n">stone_slow_abs</span><span class="o">+</span><span class="n">stone_slow_scat</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Na</span><span class="o">/</span><span class="n">A_stone</span><span class="p">);</span>
-					
-						<span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="mf">0.3</span><span class="o">*</span><span class="n">ro_oil</span><span class="o">*</span><span class="p">(</span><span class="n">oil_slow_abs</span><span class="o">+</span><span class="n">oil_slow_scat</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Na</span><span class="o">/</span><span class="n">A_oil</span><span class="p">)</span><span class="o">/</span><span class="n">sum_macro</span><span class="p">){</span>		<span class="c1">//To determine if it interacts with oil or stone
-</span>						
-							<span class="n">abs</span> <span class="o">=</span> <span class="n">oil_slow_abs</span><span class="p">;</span>
-							<span class="n">scat</span> <span class="o">=</span> <span class="n">oil_slow_scat</span><span class="p">;</span>
-							<span class="n">ro</span> <span class="o">=</span> <span class="n">ro_oil</span><span class="p">;</span>
-							<span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_oil</span><span class="p">;</span>
-							<span class="n">A</span> <span class="o">=</span> <span class="n">A_oil</span><span class="p">;</span>
-						<span class="p">}</span>
+                        <span class="n">r</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">rand</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">RAND_MAX</span><span class="p">);</span>
+                        <span class="n">sum_macro</span> <span class="o">=</span> <span class="mf">0.3</span><span class="o">*</span><span class="n">ro_oil</span><span class="o">*</span><span class="p">(</span><span class="n">oil_slow_abs</span><span class="o">+</span><span class="n">oil_slow_scat</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Na</span><span class="o">/</span><span class="n">A_oil</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.7</span><span class="o">*</span><span class="n">ro_stone</span><span class="o">*</span><span class="p">(</span><span class="n">stone_slow_abs</span><span class="o">+</span><span class="n">stone_slow_scat</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Na</span><span class="o">/</span><span class="n">A_stone</span><span class="p">);</span>
+                        
+                            <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="mf">0.3</span><span class="o">*</span><span class="n">ro_oil</span><span class="o">*</span><span class="p">(</span><span class="n">oil_slow_abs</span><span class="o">+</span><span class="n">oil_slow_scat</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Na</span><span class="o">/</span><span class="n">A_oil</span><span class="p">)</span><span class="o">/</span><span class="n">sum_macro</span><span class="p">){</span>		<span class="c1">//To determine if it interacts with oil or stone
+</span>                            
+                                <span class="n">abs</span> <span class="o">=</span> <span class="n">oil_slow_abs</span><span class="p">;</span>
+                                <span class="n">scat</span> <span class="o">=</span> <span class="n">oil_slow_scat</span><span class="p">;</span>
+                                <span class="n">ro</span> <span class="o">=</span> <span class="n">ro_oil</span><span class="p">;</span>
+                                <span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_oil</span><span class="p">;</span>
+                            <span class="n">A</span> <span class="o">=</span> <span class="n">A_oil</span><span class="p">;</span>
+                        <span class="p">}</span>
 						
-						<span class="k">else</span> <span class="p">{</span>
+                        <span class="k">else</span> <span class="p">{</span>
 						
-							<span class="n">abs</span> <span class="o">=</span> <span class="n">stone_slow_abs</span><span class="p">;</span>
-							<span class="n">scat</span> <span class="o">=</span> <span class="n">stone_slow_scat</span><span class="p">;</span>
-							<span class="n">ro</span> <span class="o">=</span> <span class="n">ro_stone</span><span class="p">;</span>
-							<span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_stone</span><span class="p">;</span>
-							<span class="n">A</span> <span class="o">=</span> <span class="n">A_stone</span><span class="p">;</span>
-						<span class="p">}</span>	
-					<span class="p">}</span>
+                            <span class="n">abs</span> <span class="o">=</span> <span class="n">stone_slow_abs</span><span class="p">;</span>
+                            <span class="n">scat</span> <span class="o">=</span> <span class="n">stone_slow_scat</span><span class="p">;</span>
+                            <span class="n">ro</span> <span class="o">=</span> <span class="n">ro_stone</span><span class="p">;</span>
+                            <span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_stone</span><span class="p">;</span>
+                            <span class="n">A</span> <span class="o">=</span> <span class="n">A_stone</span><span class="p">;</span>
+                        <span class="p">}</span>	
+                    <span class="p">}</span>
 				
-					<span class="k">else</span> <span class="p">{</span>
+                    <span class="k">else</span> <span class="p">{</span>
 					
-						<span class="n">r</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">rand</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">RAND_MAX</span><span class="p">);</span>
-						<span class="n">sum_macro</span> <span class="o">=</span> <span class="mf">0.3</span><span class="o">*</span><span class="n">ro_oil</span><span class="o">*</span><span class="p">(</span><span class="n">oil_fast_abs</span><span class="o">+</span><span class="n">oil_fast_scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A_oil</span> <span class="o">+</span> <span class="mf">0.7</span><span class="o">*</span><span class="n">ro_stone</span><span class="o">*</span><span class="p">(</span><span class="n">stone_fast_abs</span><span class="o">+</span><span class="n">stone_fast_scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A_stone</span><span class="p">;</span>
-					
-						<span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="p">(</span><span class="mf">0.3</span><span class="o">*</span><span class="n">ro_oil</span><span class="o">*</span><span class="p">(</span><span class="n">oil_fast_abs</span><span class="o">+</span><span class="n">oil_fast_scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A_oil</span><span class="p">)</span><span class="o">/</span><span class="n">sum_macro</span><span class="p">){</span>
+                        <span class="n">r</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">rand</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">RAND_MAX</span><span class="p">);</span>
+                        <span class="n">sum_macro</span> <span class="o">=</span> <span class="mf">0.3</span><span class="o">*</span><span class="n">ro_oil</span><span class="o">*</span><span class="p">(</span><span class="n">oil_fast_abs</span><span class="o">+</span><span class="n">oil_fast_scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A_oil</span> <span class="o">+</span> <span class="mf">0.7</span><span class="o">*</span><span class="n">ro_stone</span><span class="o">*</span><span class="p">(</span><span class="n">stone_fast_abs</span><span class="o">+</span><span class="n">stone_fast_scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A_stone</span><span class="p">;</span>
+                                            
+                        <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="p">(</span><span class="mf">0.3</span><span class="o">*</span><span class="n">ro_oil</span><span class="o">*</span><span class="p">(</span><span class="n">oil_fast_abs</span><span class="o">+</span><span class="n">oil_fast_scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A_oil</span><span class="p">)</span><span class="o">/</span><span class="n">sum_macro</span><span class="p">){</span>
 						
-							<span class="n">abs</span> <span class="o">=</span> <span class="n">oil_fast_abs</span><span class="p">;</span>
-							<span class="n">scat</span> <span class="o">=</span> <span class="n">oil_fast_scat</span><span class="p">;</span>
-							<span class="n">ro</span> <span class="o">=</span> <span class="n">ro_oil</span><span class="p">;</span>
-							<span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_oil</span><span class="p">;</span>
-							<span class="n">A</span> <span class="o">=</span> <span class="n">A_oil</span><span class="p">;</span>
-						<span class="p">}</span>
+                            <span class="n">abs</span> <span class="o">=</span> <span class="n">oil_fast_abs</span><span class="p">;</span>
+                            <span class="n">scat</span> <span class="o">=</span> <span class="n">oil_fast_scat</span><span class="p">;</span>
+                            <span class="n">ro</span> <span class="o">=</span> <span class="n">ro_oil</span><span class="p">;</span>
+                            <span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_oil</span><span class="p">;</span>
+                            <span class="n">A</span> <span class="o">=</span> <span class="n">A_oil</span><span class="p">;</span>
+                        <span class="p">}</span>
 						
-						<span class="k">else</span> <span class="p">{</span>
+                        <span class="k">else</span> <span class="p">{</span>
 						
-							<span class="n">abs</span> <span class="o">=</span> <span class="n">stone_fast_abs</span><span class="p">;</span>
-							<span class="n">scat</span> <span class="o">=</span> <span class="n">stone_fast_scat</span><span class="p">;</span>
-							<span class="n">ro</span> <span class="o">=</span> <span class="n">ro_stone</span><span class="p">;</span>
-							<span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_stone</span><span class="p">;</span>
-							<span class="n">A</span> <span class="o">=</span> <span class="n">A_stone</span><span class="p">;</span>
-						<span class="p">}</span>
-					<span class="p">}</span>
-				<span class="p">}</span>
+                            <span class="n">abs</span> <span class="o">=</span> <span class="n">stone_fast_abs</span><span class="p">;</span>
+                            <span class="n">scat</span> <span class="o">=</span> <span class="n">stone_fast_scat</span><span class="p">;</span>
+                            <span class="n">ro</span> <span class="o">=</span> <span class="n">ro_stone</span><span class="p">;</span>
+                            <span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha_stone</span><span class="p">;</span>
+                            <span class="n">A</span> <span class="o">=</span> <span class="n">A_stone</span><span class="p">;</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
 			
-				<span class="n">r</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">rand</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">RAND_MAX</span><span class="p">);</span>
-			
-				<span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="n">scat</span><span class="o">/</span><span class="p">(</span><span class="n">abs</span> <span class="o">+</span> <span class="n">scat</span><span class="p">)){</span>
+                <span class="n">r</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">rand</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">RAND_MAX</span><span class="p">);</span>
+                
+                <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&lt;=</span> <span class="n">scat</span><span class="o">/</span><span class="p">(</span><span class="n">abs</span> <span class="o">+</span> <span class="n">scat</span><span class="p">)){</span>
 				
-					<span class="n">r</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">rand</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">RAND_MAX</span><span class="p">);</span>
-					<span class="n">d</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="mf">3.141592653</span><span class="p">);</span>					<span class="c1">//Gives a randomized cos(theta) because z = path length * cos(theta)
-</span>					<span class="n">r</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">rand</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">RAND_MAX</span><span class="p">);</span>
-					<span class="n">z</span> <span class="o">=</span> <span class="n">z</span> <span class="o">+</span> <span class="p">(</span><span class="o">-</span><span class="n">log</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="p">((</span><span class="n">ro</span><span class="o">*</span><span class="p">(</span><span class="n">abs</span><span class="o">+</span><span class="n">scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A</span><span class="p">)</span><span class="o">*</span><span class="n">ro</span><span class="o">*</span><span class="p">(</span><span class="n">abs</span><span class="o">+</span><span class="n">scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A</span><span class="p">))</span><span class="o">*</span><span class="n">d</span><span class="p">;</span>
-					<span class="n">E</span> <span class="o">=</span> <span class="n">E</span><span class="o">*</span><span class="p">((</span><span class="mi">1</span><span class="o">+</span><span class="n">alpha</span><span class="p">)</span><span class="o">-</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span><span class="o">*</span><span class="n">d</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
-					<span class="n">interact</span> <span class="o">=</span> <span class="n">interact</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-				<span class="p">}</span>
+                    <span class="n">r</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">rand</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">RAND_MAX</span><span class="p">);</span>
+                    <span class="n">d</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">r</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="mf">3.141592653</span><span class="p">);</span>                   <span class="c1">//Gives a randomized cos(theta) because z = path length * cos(theta)
+</span>                    <span class="n">r</span> <span class="o">=</span> <span class="p">((</span><span class="kt">double</span><span class="p">)</span><span class="n">rand</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">RAND_MAX</span><span class="p">);</span>
+                    <span class="n">z</span> <span class="o">=</span> <span class="n">z</span> <span class="o">+</span> <span class="p">(</span><span class="o">-</span><span class="n">log</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="p">((</span><span class="n">ro</span><span class="o">*</span><span class="p">(</span><span class="n">abs</span><span class="o">+</span><span class="n">scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A</span><span class="p">)</span><span class="o">*</span><span class="n">ro</span><span class="o">*</span><span class="p">(</span><span class="n">abs</span><span class="o">+</span><span class="n">scat</span><span class="p">)</span><span class="o">*</span><span class="n">Na</span><span class="o">/</span><span class="n">A</span><span class="p">))</span><span class="o">*</span><span class="n">d</span><span class="p">;</span>
+                    <span class="n">E</span> <span class="o">=</span> <span class="n">E</span><span class="o">*</span><span class="p">((</span><span class="mi">1</span><span class="o">+</span><span class="n">alpha</span><span class="p">)</span><span class="o">-</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span><span class="o">*</span><span class="n">d</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+                    <span class="n">interact</span> <span class="o">=</span> <span class="n">interact</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="p">}</span>
 				
-				<span class="k">else</span> <span class="p">{</span>
+                <span class="k">else</span> <span class="p">{</span>
 				
-					<span class="n">z</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
-					<span class="n">N</span> <span class="o">=</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-					<span class="n">interact</span> <span class="o">=</span> <span class="n">interact</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-					<span class="n">absorb</span> <span class="o">=</span> <span class="n">absorb</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-				<span class="p">}</span>
-		    <span class="p">}</span>
-		<span class="p">}</span><span class="k">while</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">40</span><span class="p">);</span>
-	<span class="p">}</span>	
+                    <span class="n">z</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+                    <span class="n">N</span> <span class="o">=</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+                    <span class="n">interact</span> <span class="o">=</span> <span class="n">interact</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+                    <span class="n">absorb</span> <span class="o">=</span> <span class="n">absorb</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span><span class="k">while</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;=</span> <span class="mi">40</span><span class="p">);</span>
+    <span class="p">}</span>	
 
 <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="o">&lt;&lt;</span><span class="s">"Average number of interactions: "</span><span class="o">&lt;&lt;</span> <span class="n">interact</span><span class="o">/</span><span class="n">No</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
 	
