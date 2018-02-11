@@ -1,6 +1,6 @@
 # Jordan Ball: Data Scientist
 
-This repository contains the back-end of my personal website which can be found [here].(https://jballdata.github.io/)
+This repository contains the back-end of my personal website which can be found [here](https://jballdata.github.io/).
 
 On the site, you can read about me, view or download my resume, see a selected list of projects I have done, or read some blog posts (only one so far, though I
 am halfway through a second one explaining a systematic approach to new machine learning problems).
