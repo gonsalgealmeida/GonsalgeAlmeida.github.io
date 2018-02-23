@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://domain.tld/tag/hyde/</loc>
-<lastmod>2018-02-13T14:51:05-08:00</lastmod>
+<lastmod>2018-02-22T17:32:43-08:00</lastmod>
 </url>
 <url>
 <loc>https://domain.tld/tag/hydejack/</loc>
-<lastmod>2018-02-13T14:51:05-08:00</lastmod>
+<lastmod>2018-02-22T17:32:43-08:00</lastmod>
 </url>
 <url>
 <loc>https://domain.tld/2018/01/15/Daily-Routine-of-TDI/</loc>
@@ -91,10 +91,10 @@
 <loc>https://domain.tld/blog/</loc>
 </url>
 <url>
-<loc>https://domain.tld/</loc>
+<loc>https://domain.tld/docs/7.5.0/</loc>
 </url>
 <url>
-<loc>https://domain.tld/docs/7.5.0/</loc>
+<loc>https://domain.tld/</loc>
 </url>
 <url>
 <loc>https://domain.tld/docs/7.5.0/install/</loc>
@@ -113,6 +113,9 @@
 </url>
 <url>
 <loc>https://domain.tld/docs/7.5.0/scripts/</loc>
+</url>
+<url>
+<loc>https://domain.tld/tdi/</loc>
 </url>
 <url>
 <loc>https://domain.tld/docs/7.5.0/upgrade/</loc>
